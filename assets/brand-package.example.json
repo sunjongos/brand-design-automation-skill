@@ -1,0 +1,9 @@
+{
+  "brand": {"name": "Morning Oat", "descriptor": "A calm weekday breakfast ritual"},
+  "audience": {"primary": "Time-poor office workers", "problem": "They skip breakfast or choose inconsistent options", "context": "Weekday mornings"},
+  "strategy": {"promise": "A satisfying breakfast in under one minute", "proof": ["Pre-portioned packs", "Ingredient list available", "Portable format"], "primary_cta": "Choose tomorrow's breakfast", "prohibited_claims": ["Guaranteed weight loss", "Medical treatment claims"]},
+  "voice": {"traits": ["calm", "practical", "warm"], "do": ["Use concrete time and action", "Lead with the morning context"], "dont": ["Shame food choices", "Make unsupported health claims"]},
+  "visual": {"colors": {"primary": "#215C45", "background": "#FAF8F0", "text": "#17211C", "accent": "#D6A84B"}, "typography": {"display": "Pretendard", "body": "Pretendard", "minimum_body_px": 16}, "spacing": [4, 8, 16, 24, 40, 64], "imagery": "Natural morning light, real ingredients, uncluttered surfaces"},
+  "channels": [{"name": "landing-page", "deliverables": ["responsive page"], "adaptation": "Proof before CTA on mobile"}, {"name": "social-carousel", "deliverables": ["10 cards"], "adaptation": "One idea per card"}, {"name": "presentation", "deliverables": ["editable deck"], "adaptation": "Narrative progression"}, {"name": "short-video", "deliverables": ["16:9 video", "9:16 reel"], "adaptation": "Hook in first two seconds"}],
+  "governance": {"approver": "Brand owner", "rights_checked": true, "privacy_checked": true, "claims_checked": true, "regulated_review": null, "known_limits": ["Example data only"]}
+}

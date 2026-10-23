@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Brand Design Automation Package",
+  "type": "object",
+  "required": ["brand", "audience", "strategy", "voice", "visual", "channels", "governance"],
+  "properties": {
+    "brand": {"type": "object", "required": ["name"], "properties": {"name": {"type": "string", "minLength": 1}, "descriptor": {"type": "string"}}},
+    "audience": {"type": "object", "required": ["primary", "problem"], "properties": {"primary": {"type": "string", "minLength": 1}, "problem": {"type": "string", "minLength": 1}, "context": {"type": "string"}}},
+    "strategy": {"type": "object", "required": ["promise", "proof", "primary_cta"], "properties": {"promise": {"type": "string", "minLength": 1}, "proof": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "primary_cta": {"type": "string", "minLength": 1}, "prohibited_claims": {"type": "array", "items": {"type": "string"}}}},
+    "voice": {"type": "object", "required": ["traits", "do", "dont"], "properties": {"traits": {"type": "array", "minItems": 3, "maxItems": 5, "items": {"type": "string"}}, "do": {"type": "array", "minItems": 2, "items": {"type": "string"}}, "dont": {"type": "array", "minItems": 2, "items": {"type": "string"}}}},
+    "visual": {"type": "object", "required": ["colors", "typography", "spacing", "imagery"], "properties": {"colors": {"type": "object", "required": ["primary", "background", "text", "accent"], "additionalProperties": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"}}, "typography": {"type": "object", "required": ["display", "body", "minimum_body_px"], "properties": {"display": {"type": "string"}, "body": {"type": "string"}, "minimum_body_px": {"type": "number", "minimum": 12}}}, "spacing": {"type": "array", "minItems": 4, "items": {"type": "number", "minimum": 0}}, "imagery": {"type": "string", "minLength": 1}}},
+    "channels": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["name", "deliverables"], "properties": {"name": {"type": "string"}, "deliverables": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "adaptation": {"type": "string"}}}},
+    "governance": {"type": "object", "required": ["approver", "rights_checked", "privacy_checked", "claims_checked"], "properties": {"approver": {"type": "string", "minLength": 1}, "rights_checked": {"type": "boolean"}, "privacy_checked": {"type": "boolean"}, "claims_checked": {"type": "boolean"}, "regulated_review": {"type": ["string", "null"]}, "known_limits": {"type": "array", "items": {"type": "string"}}}}
+  },
+  "additionalProperties": false
+}
