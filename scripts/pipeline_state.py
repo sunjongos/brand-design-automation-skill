@@ -6,7 +6,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-STAGES = ["planner", "brand_anchor", "landing", "figma_design", "social", "slides", "video", "qa", "delivery"]
+STAGES = ["planner", "brand_anchor", "landing", "figma_design", "canva", "social", "slides", "video", "qa", "delivery"]
 
 
 def load(path):

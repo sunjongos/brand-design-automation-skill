@@ -19,8 +19,8 @@ Many AI design workflows optimize for the first attractive image. This skill opt
 - Hard release gates for privacy, rights, claims, and regulated review
 - Dependency-free deterministic validator with tests
 - Explicit stop rule for iterative quality improvement
-- Auditable nine-stage automation receipt; blocked stages cannot masquerade as completion
-- Direct Figma MCP and Figma Slides execution path with verified video fallbacks
+- Auditable ten-stage automation receipt; blocked stages cannot masquerade as completion
+- Direct Figma MCP, Canva MCP, and Figma Slides paths with verified video fallbacks
 
 ## Install
 
@@ -46,7 +46,7 @@ Ask the agent to create a coordinated brand campaign, for example:
 
 The agent creates a `brand-package.json` first, then derives and verifies channel outputs from it.
 
-For a full run, it also keeps a machine-readable receipt across planner, anchor, landing, Figma, social, slides, video, QA, and delivery. Astra and CapCut are used only when the host actually exposes authenticated connectors; supported fallbacks preserve the output contract without misrepresenting provider availability.
+For a full run, it also keeps a machine-readable receipt across planner, anchor, landing, Figma, Canva, social, slides, video, QA, and delivery. Astra, Canva, and CapCut are used only when the host actually exposes authenticated connectors; supported fallbacks preserve the output contract without misrepresenting provider availability.
 
 ## Safety
 

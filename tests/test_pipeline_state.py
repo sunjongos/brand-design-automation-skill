@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "pipeline_state.py"
-STAGES = ["planner", "brand_anchor", "landing", "figma_design", "social", "slides", "video", "qa", "delivery"]
+STAGES = ["planner", "brand_anchor", "landing", "figma_design", "canva", "social", "slides", "video", "qa", "delivery"]
 
 
 class PipelineStateTests(unittest.TestCase):
