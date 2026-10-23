@@ -32,6 +32,12 @@ Do not call unreviewed output “100% automated.” AI executes; the accountable
 - Use slide tooling for editable decks; use video tooling for timed motion outputs.
 - Use browser/computer control only in duplicated project files with least privilege. Never grant blanket permission when scoped approval is available.
 
+For a one-command multi-artifact request, follow [orchestration.md](references/orchestration.md) and maintain a pipeline receipt with `scripts/pipeline_state.py`. The default execution chain is:
+
+`planner -> brand package -> landing -> Figma design -> social -> Figma Slides -> motion/video -> QA -> delivery`
+
+Prefer GPT Astra only when the host exposes it as a callable model. Never pretend that a ChatGPT UI model is connected. Otherwise use the active agent model and record `planner_fallback` in the receipt. Prefer direct Figma MCP. For video use Figma timeline export, then Adobe/video MCP, then deterministic `motion-film`; CapCut is optional and must never be claimed unless its connector is authenticated and tested.
+
 See [workflow.md](references/workflow.md) for artifact-specific production contracts.
 
 ## Quality gates

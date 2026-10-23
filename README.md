@@ -19,6 +19,8 @@ Many AI design workflows optimize for the first attractive image. This skill opt
 - Hard release gates for privacy, rights, claims, and regulated review
 - Dependency-free deterministic validator with tests
 - Explicit stop rule for iterative quality improvement
+- Auditable nine-stage automation receipt; blocked stages cannot masquerade as completion
+- Direct Figma MCP and Figma Slides execution path with verified video fallbacks
 
 ## Install
 
@@ -44,6 +46,8 @@ Ask the agent to create a coordinated brand campaign, for example:
 
 The agent creates a `brand-package.json` first, then derives and verifies channel outputs from it.
 
+For a full run, it also keeps a machine-readable receipt across planner, anchor, landing, Figma, social, slides, video, QA, and delivery. Astra and CapCut are used only when the host actually exposes authenticated connectors; supported fallbacks preserve the output contract without misrepresenting provider availability.
+
 ## Safety
 
 - Never place credentials, confidential material, patient data, or other private data into design prompts.
@@ -59,7 +63,9 @@ assets/brand-package.schema.json Machine-readable contract
 assets/brand-package.example.json Example package
 references/workflow.md           Artifact production contracts
 references/qa-rubric.md          Release rubric and iteration loop
+references/orchestration.md      End-to-end MCP workflow and failure policy
 scripts/validate_brand_package.py Dependency-free validator
+scripts/pipeline_state.py         Auditable stage receipt
 tests/                            Regression tests
 ```
 
