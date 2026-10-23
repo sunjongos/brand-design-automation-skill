@@ -13,7 +13,7 @@
 5. `canva` — verify live authentication, select an approved Brand Kit when available, then create editable template/social adaptations. Never replace Figma source-of-truth tokens silently.
 6. `social` — derive channel-native frames from the same promise, CTA, and tokens.
 7. `slides` — call Figma Slides with a self-contained brief; retain editable claim URLs.
-8. `video` — route in order: Figma timeline/MP4, Adobe quick cut/resize, deterministic motion-film. Produce 16:9 and 9:16; a CapCut path is optional only when connected.
+8. `video` — the active capable model writes the edit decision list, scene code, captions, transitions, and safe-area adaptations. Render with deterministic motion-film + FFmpeg and run frame QA. Produce 16:9 and 9:16. Figma/Adobe may accelerate; CapCut is optional only when connected.
 9. `qa` — validate tokens, contrast, privacy, rights, claims, responsive behavior, screenshots, and video frames.
 10. `delivery` — provide editable sources, final exports, URLs, receipt, limitations, and approver state.
 
@@ -23,6 +23,7 @@
 - Never silently skip a stage. Mark it `blocked`, record evidence and fallback, and continue only if the fallback preserves the requested outcome.
 - Authentication is a user boundary. Return the exact reconnect requirement; do not claim a connector works.
 - External writes use project-specific files and least privilege.
+- A remote generative-video failure does not block editing when source assets and the local motion-film/FFmpeg path are available. Record the local render, probe output, and QA report as evidence.
 
 ## Receipt
 

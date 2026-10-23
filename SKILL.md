@@ -29,14 +29,14 @@ Do not call unreviewed output “100% automated.” AI executes; the accountable
 - Use code/HTML/CSS for responsive landing pages and deterministic components.
 - Use the host image-generation skill for original raster imagery or image edits.
 - Use Figma-compatible tooling when editable design-system artifacts are required.
-- Use slide tooling for editable decks; use video tooling for timed motion outputs.
+- Use slide tooling for editable decks. For video, let the active capable model write the edit decision list, captions, motion, and aspect adaptations; render deterministically with `motion-film` and FFmpeg.
 - Use browser/computer control only in duplicated project files with least privilege. Never grant blanket permission when scoped approval is available.
 
 For a one-command multi-artifact request, follow [orchestration.md](references/orchestration.md) and maintain a pipeline receipt with `scripts/pipeline_state.py`. The default execution chain is:
 
 `planner -> brand package -> landing -> Figma design -> Canva adaptation -> social -> Figma Slides -> motion/video -> QA -> delivery`
 
-Prefer GPT Astra only when the host exposes it as a callable model. Never pretend that a ChatGPT UI model is connected. Otherwise use the active agent model and record `planner_fallback` in the receipt. Prefer direct Figma MCP for editable systems and Canva MCP for template/social adaptation; both require live write tests. For video use Figma timeline export, then Adobe/video MCP, then deterministic `motion-film`; CapCut is optional and must never be claimed unless its connector is authenticated and tested.
+Prefer GPT Astra only when the host exposes it as a callable model. Never pretend that a ChatGPT UI model is connected. Otherwise use the active capable agent model and record `planner_fallback` in the receipt. Prefer direct Figma MCP for editable systems and Canva MCP for template/social adaptation; both require live write tests. The default video editor is model-authored, deterministic `motion-film` + FFmpeg. Figma timeline and Adobe/video MCP are optional accelerators. CapCut is never required and must not be claimed unless its connector is authenticated and tested.
 
 See [workflow.md](references/workflow.md) for artifact-specific production contracts.
 

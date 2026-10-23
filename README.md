@@ -20,7 +20,7 @@ Many AI design workflows optimize for the first attractive image. This skill opt
 - Dependency-free deterministic validator with tests
 - Explicit stop rule for iterative quality improvement
 - Auditable ten-stage automation receipt; blocked stages cannot masquerade as completion
-- Direct Figma MCP, Canva MCP, and Figma Slides paths with verified video fallbacks
+- Direct Figma MCP, Canva MCP, and Figma Slides paths plus model-authored motion-film/FFmpeg editing
 
 ## Install
 
@@ -46,7 +46,7 @@ Ask the agent to create a coordinated brand campaign, for example:
 
 The agent creates a `brand-package.json` first, then derives and verifies channel outputs from it.
 
-For a full run, it also keeps a machine-readable receipt across planner, anchor, landing, Figma, Canva, social, slides, video, QA, and delivery. Astra, Canva, and CapCut are used only when the host actually exposes authenticated connectors; supported fallbacks preserve the output contract without misrepresenting provider availability.
+For a full run, it also keeps a machine-readable receipt across planner, anchor, landing, Figma, Canva, social, slides, video, QA, and delivery. Astra and Canva are used only when the host actually exposes authenticated connectors. Video editing defaults to the active capable model plus deterministic motion-film/FFmpeg; CapCut is optional rather than a dependency.
 
 ## Safety
 

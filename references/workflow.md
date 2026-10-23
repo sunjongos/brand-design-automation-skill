@@ -28,6 +28,7 @@ Make the promise, proof, CTA, voice, tokens, image direction, prohibited claims,
 - Define hook, proof, payoff, CTA, duration, aspect ratio, captions, and safe zones before editing.
 - Produce horizontal and vertical edits from the same message architecture, not automatic crop alone.
 - Captions are reviewed against audio; licensed audio and image sources are recorded.
+- Default execution: model-authored edit decision list and deterministic motion scene -> beat stills -> full render -> FFprobe -> frame QA. A GUI editor is not a prerequisite.
 
 ## Interactive promotion
 
